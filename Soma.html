@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial;
+        }
+    </style>
+    <script>
+        let numeros = []; // Array para armazenar os números informados pelo usuário
+        let soma = 0;
+
+        // Loop para ler os 10 números e armazená-los no array
+        for (let i = 1; i <= 6; i++) {
+            let numero = parseInt(prompt(`Digite o número  ${i} :`));
+            numeros.push(numero); // Adiciona o número ao array
+        }
+
+        // Loop para calcular a soma total dos números no array
+        for (let i = 0; i < numeros.length; i++) {
+            soma += numeros[i];
+        }
+
+        document.write(`A soma dos 10 números é:  ${soma}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial;
+        }
+    </style>
+    <script>
+        let n1 = prompt("Digite um número: ");
+        let n2 = prompt("Digite outro número: ");
+        let n3 = prompt("Digite mais um número:")
+        if(n1 > n2 && n1 > n3)
+        {
+            document.write(`O número  ${n1} é o maior`);
+        }
+        else if(n2 > n1 && n2 > n3){
+            document.write(`O número  ${n2} é o maior`);
+        }
+        else if(n3 > n1 && n3 > n2){
+            document.write(`O número  ${n3} é o maior`);
+        }
+        else{
+            document.write(`Os numeros são iguais!`);
+        }
+    </script>
+</body>
+</html>
